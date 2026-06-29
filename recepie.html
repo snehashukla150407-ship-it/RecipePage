@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+body{
+    background-color: #f7f2ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 600px;
+    border-radius: 20px;
+    padding: 35px;
+}
+.photo{
+    height: 250px;
+    width: 100%;
+    background-image: url("https://www.freshsavory.com/wp-content/uploads/2026/01/creamy-garlic-pasta-500x375.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.parts{
+    padding-top: 20px;
+}
+
+.heading{
+    font-family: "Young Serif", serif;
+    padding-bottom: 10px;
+    color: #8b4513;
+    
+}
+.body-text{
+    font-family: "Outfit", sans-serif;
+    color: #5f5f5f;
+}
+.Preparation-timebox{
+    background-color: #fff1f8;
+    padding: 12px 27px;
+    border-radius: 10px;
+}
+li{
+    margin-bottom:10px ;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+    color: #8b4513;
+    font-weight: bold;
+}
+@media (max-width:600px) {
+    .page{
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .photo{
+        border-radius: 0px;
+    }
+    section{
+        padding:0px 40px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="photo"></div>
+        <section class="parts">
+            <h1 class="main-heading heading " style="color: #2c1f1a;">Creamy Garlic Pasta</h1>
+            <p class="body-text">A rich and comforting pasta dish made with a silky garlic cream sauce, fresh herbs, and parmesan cheese. Perfect for a quick weeknight dinner or a cozy weekend meal.</p>
+        </section>
+        <section class="parts">
+            <section class="Preparation-timebox">
+                <h3 class="heading" style="color: #7a284e;">Preparation Time</h3>
+                <ul class="body-text">
+                    <li>Total: Approximately 25 minutes</li>
+                    <li>Preparation: 10 minutes</li>
+                    <li>Cooking: 15 minutes</li>
+                </ul>
+            </section>
+        </section>
+        <section class="parts">
+            <h2 class="heading">Ingredients</h2>
+            <ul class="body-text">
+                <li>250g spaghetti or fettuccine</li>
+                <li>2 tablespoons olive oil</li>
+                <li>4 cloves garlic, minced</li>
+                <li>1 cup heavy cream</li>
+                <li>½ cup grated parmesan cheese</li>
+                <li>1 teaspoon dried oregano</li>
+                <li>Salt, to taste</li>
+                <li>Black pepper, to taste</li>
+                <li>2 tablespoons chopped fresh parsley</li>
+                <li>Optional: red chili flakes for extra heat</li>
+            </ul>
+        </section>
+        <section class="parts">
+            <h2 class="heading">Instructions</h2>
+            <ol class="body-text">
+                <li>
+                    <strong>Cook the pasta</strong><br>
+                    Bring a large pot of salted water to a boil. Cook the pasta according to package instructions until al dente. Reserve ½ cup of pasta water before draining.
+                </li>
+                <li>
+                    <strong>Prepare the garlic base</strong><br>
+                    Heat olive oil in a large skillet over medium heat. Add the minced garlic and sauté for 1–2 minutes until fragrant.
+                </li>
+                <li>
+                    <strong>Make the sauce</strong><br>
+                    Pour in the heavy cream and stir gently. Add oregano, salt, and black pepper. Simmer for 3–4 minutes.
+                </li>
+                <li>
+                    <strong>Add the cheese</strong><br>
+                    Stir in the parmesan cheese until melted and smooth. If the sauce becomes too thick, add a little reserved pasta water.
+                </li>
+                <li>
+                    <strong>Combine</strong><br>
+                    Add the cooked pasta to the skillet and toss until every strand is coated in the creamy sauce.
+                </li>
+                <li>
+                    <strong>Serve</strong><br>
+                    Garnish with fresh parsley and a sprinkle of chili flakes if desired. Serve immediately while hot.
+                </li>
+            </ol>
+        </section>
+        <section class="parts">
+            <h2 class="heading">Nutrition</h2>
+
+            <p class="body-text">The values below are approximate per serving.</p>
+
+            <table class="body-text">
+                <tr>
+                    <td>Calories</td>
+                    <td>420 kcal</td>
+                </tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>48 g</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>12 g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>20 g</td>
+                </tr>
+
+                <tr>
+                    <td>Fiber</td>
+                    <td>3 g</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
